@@ -83,7 +83,7 @@ body {
 
     height: 100%;
 
-    object-fit: fill;
+    object-fit: cover;
 
     transition: transform 0.3s ease;
 }
@@ -98,6 +98,22 @@ body {
 
     grid-row: span 1;
 
+}
+
+.gallery-item.square {
+    grid-column: span 1;
+
+    grid-row: span 1;
+
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 
@@ -131,7 +147,7 @@ body {
 
         align-items: center;
         justify-content: center;
-
+        margin-left: 15%;
         width: 100%;
     }
 

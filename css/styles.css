@@ -23,7 +23,7 @@ header {
 }
 
 nav {
-    margin-left: 30% !important;
+    margin-left: 17% !important;
 }
 
 .dropdown-menu {
@@ -67,9 +67,9 @@ nav {
 
 }
 
-.sticky-top{
-    height:51vh;
-  }
+.sticky-top {
+    height: 51vh;
+}
 
 
 .container .row {
@@ -79,13 +79,13 @@ nav {
 }
 
 .row {
-    flex: 1; 
+    flex: 1;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    max-width: 1220px; 
-    margin: 0 auto; 
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1220px;
+    margin: 0 auto;
+
 }
 
 .project-cover {
@@ -93,28 +93,31 @@ nav {
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    margin: 15px; 
-    flex: 1 1 30%; 
-    height: 400px; 
+    margin: 11px;
+    flex: 1 1 30%;
+    height: 340px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .cover-image {
-    height: 70%; 
-    position: relative;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .cover__img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    transition: filter 0.5s; 
+    transition: filter 0.5s;
 }
 
 .project-cover:hover .cover__img {
-    filter: blur(5px); 
+    filter: blur(5px);
 }
 
 .details-wrap {
@@ -123,25 +126,25 @@ nav {
     left: 0;
     right: 0;
     color: white;
-    background: rgba(0, 0, 0, 0.7); 
-    padding: 10px 20px; 
-    opacity: 0; 
-    transition: opacity 0.5s ease, transform 0.5s ease; 
-    transform: translateY(20px); 
-    width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(20px);
+    width: 700px;
 }
 
 .project-cover:hover .details-wrap {
-    opacity: 1; 
-    transform: translateY(0); 
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .title {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
 .date {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
 
@@ -149,7 +152,7 @@ nav {
 @media (max-width: 768px) {
     body {
         background-size: contain;
-        background-position: right; 
+        background-position: right;
         height: auto;
         background-size: cover;
     }
@@ -160,36 +163,35 @@ nav {
         top: 0;
         left: 0;
         width: 100%;
-        height: 200%;
-        background-color: rgba(0, 0, 0, 0.61); 
-        z-index: -1; 
+        height: 300%;
+        background-color: rgba(0, 0, 0, 0.404);
+        z-index: -1;
     }
 
     .col-md-4 {
-        height: 250px; 
-        overflow: hidden; 
+        height: 250px;
+        overflow: hidden;
     }
-    .panel {
 
+    .panel {
         display: flex;
-        justify-content: center;  
-        align-items: center;     
-        flex-direction: column;  
-        margin: 0 auto;              
-        width: 100%;          
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .project-cover {
- 
-        width: 100%;           
-        margin-right: 110px;         
-        display: block;           
-        box-sizing: border-box;     
+        width: 100%;
+        margin-right: 110px;
+        display: block;
+        box-sizing: border-box;
     }
 
     .cover-image img {
-        width: 100%;                
-        height: auto;                
+        width: 100%;
+        height: 220px;
     }
 
 
@@ -203,22 +205,25 @@ nav {
 
     .navbar-nav {
         flex-direction: column;
-
         align-items: flex-start;
-
     }
+
 
 
     .dropdown-menu {
         position: absolute !important;
-        transform: none !important; 
+        transform: none !important;
+        max-height: 30vh;
+        /* 60% of screen height */
+        overflow-y: auto;
     }
 
     .dropleft .dropdown-menu {
-        left: auto !important; 
-        right: 100%; 
-        top: 0; 
+        left: auto !important;
+        right: 100%;
+        top: 0;
     }
+
 }
 
 
@@ -226,12 +231,12 @@ nav {
 
 @media (max-width: 480px) {
     .project-cover {
-        flex: 1 1 100%; 
-        height: 300px; 
+        flex: 1 1 100%;
+        height: 300px;
     }
 
     .cover-image {
-        height: 50%; 
+        height: 50%;
     }
 
     .title {
@@ -246,28 +251,28 @@ nav {
 
 
 #backToTopBtn {
-    display: none; 
-    position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: white; 
-    cursor: pointer; 
-    padding: 15px; 
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
     border-radius: 20px;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 #backToTopBtn:hover {
-    background-color: #000000; 
+    background-color: #000000;
 }
 
 .rott {
     font-size: small;
-    color: rgba(255, 255, 255, 0.212);
+    color: rgba(255, 255, 255, 0.062);
     position: fixed;
     margin-top: 170px;
     margin-left: 250px;
@@ -277,31 +282,42 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 50px; 
+    height: 50px;
     color: rgba(255, 255, 255, 0.13);
     text-align: left;
     padding: 10px;
-} 
+}
 
 
 @media (max-width: 768px) {
     .navbar-nav {
-        flex-direction: row !important; 
+        flex-direction: row !important;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
         width: 100%;
         margin-bottom: 100px;
     }
 
     .nav-item {
-        padding: 10px;
-        width: auto; 
+        margin-left: 10px;
+        padding-left: 10px;
+        width: auto;
         text-align: center;
     }
+
 
 
     .navbar-toggler {
         display: block;
     }
+
+    .rott {
+        font-size: small;
+        color: rgba(255, 255, 255, 0.068);
+        position: fixed;
+        margin-top: 70px;
+        margin-left: 275px;
+    }
+
 
 }

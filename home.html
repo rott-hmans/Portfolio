@@ -8,26 +8,30 @@
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="row">
         <div class="col-md-4">
-            <p class="rott"></p>
-            <header class="text-white py-3 sticky-top d-flex flex-column pr-5">
-                <h1>Tomáš Liška</h1>
-                <nav class="container navbar navbar-expand-lg navbar-dark ml-5">
+            <p class="rott">rott.hmans</p>
+            <header class="text-white sticky-top d-flex flex-column align-items-start mt-3">
+                <h1 class="ml-5">Tomáš Liška</h1>
+                <nav class="navbar navbar-expand-lg navbar-dark pb-5 mb-5">
                     <div class="navbar-nav" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href="welcome.html"></a></li>
                             <li class="nav-item dropdown dropleft">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropleftMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropleftMenu" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Práce
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="dropleftMenu">
-                                    <a class="dropdown-item" href="home.html">Fotky</a>
-                                    <a class="dropdown-item" href="video.html">Video</a>
+                                    <a class="dropdown-item filter-btn" data-filter="all" href="#">Vše</a>
+                                    <a class="dropdown-item filter-btn" data-filter="art" href="#">Umělecké</a>
+                                    <a class="dropdown-item filter-btn" data-filter="cover" href="#">Hudba</a>
+                                    <a class="dropdown-item filter-btn" data-filter="concert" href="#">Koncerty</a>
+                                    <a class="dropdown-item filter-btn" data-filter="peoples" href="#">Lidé</a>
                                 </div>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="about.html">O mě</a></li>
@@ -36,15 +40,182 @@
                     </div>
                 </nav>
             </header>
-            <div>
-                <p></p>
-            </div>
         </div>
-        <div class="col-md-8">
+
+        <div class="col-md-7 mt-5">
             <div class="container mt-5 ml-5">
                 <div class="row">
                     <div class="panel col-md-12">
-                        <a class="project-cover" href="gallery/1.html">
+                        <a class="project-cover" data-category="peoples" href="gallery/aerialhoop.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/_TLF1882.jpg" alt="Panel 9">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">AerialHoop
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="cover" href="gallery/trinssound.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/_TLF1702.JPG" alt="Panel 8">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">Trinssound - Album cover
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="gallery/spirit.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/_TLF1830.JPG" alt="Panel 7">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">Spirit
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="gallery/textmapping.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/_TLF1115.jpg" alt="Panel 6">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">Textmapping
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="gallery/kitten.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/TLF0769.jpg" alt="Panel 5">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">Kitten Murderer
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="cover" href="gallery/sleep.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/_TLF0182-2.jpg" alt="Panel 4">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">sleep - Album cover
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="gallery/1.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="gallery/war is not over/_DSC8575.jpg"
+                                            alt="Panel 3">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">War Is Not Over
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="cover" href="gallery/baggage.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/4.jpg" alt="Panel 2">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">MyBaggage - Song cover
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="gallery/puda.html">
                             <div class="cover-content-container">
                                 <div class="cover-image-wrap">
                                     <div class="cover-image">
@@ -54,95 +225,16 @@
                                 <div class="details-wrap">
                                     <div class="details">
                                         <div class="details-inner">
-                                            <div class="title preserve-whitespace">SMRT SLUNCE. PRÁZDNÁ MÍSTA
+                                            <div class="title preserve-whitespace">Ghost
                                             </div>
-                                            <div class="date">2024</div>
+                                            <div class="date">2025</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
-
-                    <div class="panel col-md-12">
-                        <a class="project-cover" href="/detail2" onclick="showDetails('detail2')">
-                            <div class="cover-content-container">
-                                <div class="cover-image-wrap">
-                                    <div class="cover-image">
-                                        <img class="cover__img" src="img/covers/DSC06998.jpg" alt="Panel 2">
-                                    </div>
-                                </div>
-                                <div class="details-wrap">
-                                    <div class="details">
-                                        <div class="details-inner">
-                                            <div class="title preserve-whitespace">Okulus</div>
-                                            <div class="date">2023</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="panel col-md-12 mt-3">
-                        <a class="project-cover" href="/detail3" onclick="showDetails('detail3')">
-                            <div class="cover-content-container">
-                                <div class="cover-image-wrap">
-                                    <div class="cover-image">
-                                        <img class="cover__img" src="img/DSC00430.jpg" alt="Panel 3">
-                                    </div>
-                                </div>
-                                <div class="details-wrap">
-                                    <div class="details">
-                                        <div class="details-inner">
-                                            <div class="title preserve-whitespace">Krnovské muzikální slavnosti</div>
-                                            <div class="date">2023</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="panel col-md-12 mt-3">
-                        <a class="project-cover" href="/detail3" onclick="showDetails('detail3')">
-                            <div class="cover-content-container">
-                                <div class="cover-image-wrap">
-                                    <div class="cover-image">
-                                        <img class="cover__img" src="img/DSC02707.jpg" alt="Panel 3">
-                                    </div>
-                                </div>
-                                <div class="details-wrap">
-                                    <div class="details">
-                                        <div class="details-inner">
-                                            <div class="title preserve-whitespace">Gymplbands</div>
-                                            <div class="date">2023</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="panel col-md-12 mt-3">
-                        <a class="project-cover" href="/detail3" onclick="showDetails('detail3')">
-                            <div class="cover-content-container">
-                                <div class="cover-image-wrap">
-                                    <div class="cover-image">
-                                        <img class="cover__img" src="img/DSC04560.jpg" alt="Panel 3">
-                                    </div>
-                                </div>
-                                <div class="details-wrap">
-                                    <div class="details">
-                                        <div class="details-inner">
-                                            <div class="title preserve-whitespace">Název Panelu 3</div>
-                                            <div class="date">2024</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <br>
                 </div>
             </div>
         </div>
@@ -157,5 +249,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
+<script>
+    document.querySelectorAll(".filter-btn").forEach(button => {
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+            const filter = this.getAttribute("data-filter");
+
+            document.querySelectorAll(".project-cover").forEach(project => {
+                if (filter === "all" || project.getAttribute("data-category") === filter) {
+                    project.style.display = "flex"; // show
+                } else {
+                    project.style.display = "none"; // hide
+                }
+            });
+        });
+    });
+</script>
+
 
 </html>
