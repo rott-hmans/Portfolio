@@ -162,6 +162,10 @@ nav {
     font-size: 1.2rem;
 }
 
+img.blur {
+  filter: blur(5px);
+}
+
 
 
 @media (max-width: 768px) {
@@ -287,10 +291,10 @@ nav {
 
 .rott {
     font-size: small;
-    color: rgba(255, 255, 255, 0.062);
+    color: rgba(255, 255, 255, 0.342);
     position: fixed;
-    margin-top: 170px;
-    margin-left: 250px;
+    margin-top: 150px;
+    margin-left: 280px;
 }
 
 footer {
