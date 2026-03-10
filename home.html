@@ -7,16 +7,26 @@
     <title>Portfolio</title>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
+
 <body>
+    <div id="intro-screen">
+        <img src="img/rott.w.png" alt="Logo" class="intro-logo">
+    </div>
+
     <div class="row">
         <div class="col-md-4">
-            <p class="rott">rott.hmans</p>
+
             <header class="text-white sticky-top d-flex flex-column align-items-start mt-3">
-                <h1 class="ml-5">Tomáš Liška</h1>
+                <div>
+                    <img class="rottimg" src="img/rott.w.png" alt="rott">
+                </div>
                 <nav class="navbar navbar-expand-lg navbar-dark pb-5 mb-5">
                     <div class="navbar-nav" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
@@ -35,24 +45,46 @@
                                 </div>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">O mě</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">O.mě</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Kontakty</a></li>
                         </ul>
                     </div>
                 </nav>
             </header>
         </div>
+
         <!---->
         <div class="col-md-7 mt-5">
             <div class="container mt-5 ml-5">
                 <div class="row">
 
                     <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="gallery/aqarko.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="gallery/Aqarko/3.jpg" alt="Panel 11">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">Aqarko
+                                            </div>
+                                            <div class="date">2026</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="panel col-md-12">
                         <a class="project-cover" data-category="art" href="gallery/apple.html">
                             <div class="cover-content-container">
                                 <div class="cover-image-wrap">
                                     <div class="cover-image">
-                                        <img class="cover__img" src="img/covers/apple.jpg" alt="Panel 9">
+                                        <img class="cover__img" src="img/covers/apple.jpg" alt="Panel 10">
                                     </div>
                                 </div>
                                 <div class="details-wrap">
@@ -270,6 +302,36 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        (function () {
+            const intro = document.getElementById("intro-screen");
+
+            // If element does not exist, abort safely
+            if (!intro) return;
+
+            // Skip intro if already shown this session
+            if (sessionStorage.getItem("introShown") === "true") {
+                intro.style.display = "none";
+                return;
+            }
+
+            // Mark as shown
+            sessionStorage.setItem("introShown", "true");
+
+            // Prevent scroll during intro
+            document.documentElement.style.overflow = "hidden";
+
+            // ALWAYS remove intro after timeout (failsafe)
+            setTimeout(() => {
+                intro.style.opacity = "0";
+
+                setTimeout(() => {
+                    intro.style.display = "none";
+                    document.documentElement.style.overflow = "";
+                }, 800);
+            }, 1000);
+        })();
+    </script>
 </body>
 
 <script>

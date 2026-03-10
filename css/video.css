@@ -20,10 +20,19 @@
     object-fit: contain;
 }
 
+.video-wrapper {
+    max-width: 900px;   /* choose your limit */
+    margin: 0 auto;     /* center horizontally */
+}
+
+.embed-responsive {
+    height: auto;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Georgia', serif;
+    font-family: 'Geist Mono', monospace;
     background-image: url('../img/Untitled-2.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -46,6 +55,14 @@ header {
 
 nav {
     margin-left: 30% !important;
+}
+
+.rottimg {
+    height: 5rem;
+    /* matches h1 visually */
+    width: auto;
+    display: block;
+    margin-left: 155px;
 }
 
 .dropdown-menu {

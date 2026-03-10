@@ -7,100 +7,339 @@
     <title>Portfolio</title>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
+
 <body>
+    <div id="intro-screen">
+        <img src="img/rott.w.png" alt="Logo" class="intro-logo">
+    </div>
     <div class="row">
         <div class="col-md-4">
-            <header class="text-white py-3 sticky-top d-flex flex-column pr-5">
-                <h1>Tomáš Liška</h1>
-                <nav class="container navbar navbar-expand-lg navbar-dark ml-5">
+
+            <header class="text-white sticky-top d-flex flex-column align-items-start mt-3">
+                <div>
+                    <img class="rottimg" src="img/rott.w.png" alt="rott">
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-dark pb-5 mb-5">
                     <div class="navbar-nav" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href="welcome.html"></a></li>
                             <li class="nav-item dropdown dropleft">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropleftMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Práce
+                                <a class="nav-link dropdown-toggle" href="#" id="dropleftMenu" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Fotky
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="dropleftMenu">
-                                    <a class="dropdown-item" href="home.html">Fotky</a>
+                                    <a class="dropdown-item" data-filter="all" href="home.html">Vše</a>
+                                    <a class="dropdown-item filter-btn" data-filter="art" href="#">Umělecké</a>
+                                    <a class="dropdown-item filter-btn" data-filter="cover" href="#">Hudba</a>
+                                    <a class="dropdown-item filter-btn" data-filter="concert" href="#">Koncerty</a>
+                                    <a class="dropdown-item filter-btn" data-filter="peoples" href="#">Lidé</a>
                                 </div>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">O mě</a></li>
+                            <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">O.mě</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Kontakty</a></li>
                         </ul>
                     </div>
                 </nav>
             </header>
-            <p class="text-white">! Stále se na této strance pracuje !</p>
         </div>
-        <div class="col-md-8">
+
+        <!---->
+        <div class="col-md-7 mt-5">
             <div class="container mt-5 ml-5">
                 <div class="row">
                     <div class="panel col-md-12">
-                        <div class="video-container">
-                  
-                            <video controls>
-                                <source src="video/CC.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                        <a class="project-cover" data-category="art" href="video/reunite.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/reunite.jpg" alt="Panel 9">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">VEGA - REUNITE
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="panel col-md-12">
-                        <div class="video-container">
-                
-                            <video controls>
-                                <source src="video/Dream II_1.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                        <a class="project-cover" data-category="art" href="video/krmeni.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/krmeni2.png" alt="Panel 9">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">Krmení
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="panel col-md-12 mt-3">
-                        <div class="video-container">
-                       
-                            <video controls>
-                                <source src="video/PALKIA.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="peoples" href="video/pohyb.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/pohyb.jpg" alt="Panel 9">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">Pohyb
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-
-                    <div class="panel col-md-12 mt-3">
-                        <div class="video-container">
-                   
-                            <video controls>
-                                <source src="videos/video4.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="video/wouldnt.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/wouldntbe.jpg" alt="Panel 9">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">VEGA - Wouldn’t Be
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-
-                    <div class="panel col-md-12 mt-3">
-                        <div class="video-container black-bars">
-                    
-                            <video controls>
-                                <source src="videos/video5.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="video/tiem.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/V8xEO6ldEBU-HD.jpg" alt="Panel 10">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">VEGA - TIE 'EM UP, LOAD THE CLIP
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="video/corvettefrees.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/nPPnOOSbI2o-HD.jpg" alt="Panel 10">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">VEGA - CORVETTE FREESTYLE
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="video/paytheprice.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/IU2Dj2WndHs-HD.jpg" alt="Panel 10">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">VEGA - PAY THE PRICE
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="video/mybaggage.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/6hnIXZAEDko-HD.jpg" alt="Panel 10">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">VEGA - My Baggage
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="video/aerial.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/aerialVideo.png" alt="Panel 10">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">aErial
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="video/dream.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/dream.png" alt="Panel 10">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">Dream
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="panel col-md-12">
+                        <a class="project-cover" data-category="art" href="video/les&megi.html">
+                            <div class="cover-content-container">
+                                <div class="cover-image-wrap">
+                                    <div class="cover-image">
+                                        <img class="cover__img" src="img/covers/les.png" alt="Panel 10">
+                                    </div>
+                                </div>
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="details-inner">
+                                            <div class="title preserve-whitespace">L E S
+                                            </div>
+                                            <div class="date">2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
                 </div>
             </div>
         </div>
+        <button onclick="topFunction()" id="backToTopBtn" title="Go to top">up</button>
     </div>
     <footer>
         <p class="konec">&copy; 2024 Tomáš Liška</p>
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        (function () {
+            const intro = document.getElementById("intro-screen");
+
+            // If element does not exist, abort safely
+            if (!intro) return;
+
+            // Skip intro if already shown this session
+            if (sessionStorage.getItem("introShown") === "true") {
+                intro.style.display = "none";
+                return;
+            }
+
+            // Mark as shown
+            sessionStorage.setItem("introShown", "true");
+
+            // Prevent scroll during intro
+            document.documentElement.style.overflow = "hidden";
+
+            // ALWAYS remove intro after timeout (failsafe)
+            setTimeout(() => {
+                intro.style.opacity = "0";
+
+                setTimeout(() => {
+                    intro.style.display = "none";
+                    document.documentElement.style.overflow = "";
+                }, 800);
+            }, 1000);
+        })();
+    </script>
 </body>
+
+<script>
+    document.querySelectorAll(".filter-btn").forEach(button => {
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+            const filter = this.getAttribute("data-filter");
+
+            document.querySelectorAll(".project-cover").forEach(project => {
+                if (filter === "all" || project.getAttribute("data-category") === filter) {
+                    project.style.display = "flex"; // show
+                } else {
+                    project.style.display = "none"; // hide
+                }
+            });
+        });
+    });
+</script>
+
 
 </html>
