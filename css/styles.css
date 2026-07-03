@@ -297,7 +297,7 @@ img.blur {
 
     .rottimg {
         padding-top: 40px;
-        padding-left: 20px;
+        padding-left: 65px;
         height: 6rem;
         width: 100% !important;
         margin: 0 auto !important;
@@ -369,7 +369,7 @@ img.blur {
     /* matches h1 visually */
     width: auto;
     display: block;
-    margin-left: 800px;
+    margin-left: 1000px;
 
 }
 
